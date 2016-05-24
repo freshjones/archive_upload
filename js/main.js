@@ -87,8 +87,6 @@
           }
 
 
-          console.log(droppedFiles[0].name);
-
           // ajax request
           $.ajax(
           {
@@ -103,7 +101,6 @@
             },
             success: function( data )
             {
-              console.log(data);
               $form.addClass( data.success === true ? 'is-success' : 'is-error' );
               if( !data.success ) $errorMsg.text( data.error );
             },

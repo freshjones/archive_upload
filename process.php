@@ -1,4 +1,3 @@
 <?php
-$data = array('bob'=>$_POST);
-header('Content-type: application/json; charset=utf-8');
-echo json_encode($data);
+require('fileupload/server/php/UploadHandler.php');
+$upload_handler = new UploadHandler();
